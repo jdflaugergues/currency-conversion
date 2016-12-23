@@ -1,5 +1,73 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1="Convertisseur de devise"
+  input(id="value")
+  select(name="from" id="from")
+    option(value="EUR") EUR
+    option(value="AUD") AUD
+    option(value="BGN") BGN
+    option(value="BRL") BRL
+    option(value="CAD") CAD
+    option(value="CHF") CHF
+    option(value="CNY") CNY
+    option(value="CZK") CZK
+    option(value="DKK") DKK
+    option(value="GBP") GBP
+    option(value="HKD") HKD
+    option(value="HRK") HRK
+    option(value="HUF") HUF
+    option(value="IDR") IDR
+    option(value="ILS") ILS
+    option(value="INR") INR
+    option(value="JPY") JPY
+    option(value="KRW") KRW
+    option(value="MXN") MXN
+    option(value="MYR") MYR
+    option(value="NOK") NOK
+    option(value="NZD") NZD
+    option(value="PHP") PHP
+    option(value="PLN") PLN
+    option(value="RON") RON
+    option(value="RUB") RUB
+    option(value="SEK") SEK
+    option(value="SGD") SGD
+    option(value="THB") THB
+    option(value="TRY") TRY
+    option(value="USD") USD
+    option(value="ZAR") ZAR
+  <->
+  select(name="to" id="to")
+    option(value="EUR") EUR
+    option(value="AUD") AUD
+    option(value="BGN") BGN
+    option(value="BRL") BRL
+    option(value="CAD") CAD
+    option(value="CHF") CHF
+    option(value="CNY") CNY
+    option(value="CZK") CZK
+    option(value="DKK") DKK
+    option(value="GBP") GBP
+    option(value="HKD") HKD
+    option(value="HRK") HRK
+    option(value="HUF") HUF
+    option(value="IDR") IDR
+    option(value="ILS") ILS
+    option(value="INR") INR
+    option(value="JPY") JPY
+    option(value="KRW") KRW
+    option(value="MXN") MXN
+    option(value="MYR") MYR
+    option(value="NOK") NOK
+    option(value="NZD") NZD
+    option(value="PHP") PHP
+    option(value="PLN") PLN
+    option(value="RON") RON
+    option(value="RUB") RUB
+    option(value="SEK") SEK
+    option(value="SGD") SGD
+    option(value="THB") THB
+    option(value="TRY") TRY
+    option(value="USD") USD
+    option(value="ZAR") ZAR
+  div(id="resultat")
